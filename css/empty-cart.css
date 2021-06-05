@@ -1,0 +1,26 @@
+/* --- empty cart --- */
+
+.empty-cart {
+  background-image: url("/images/woman.png");
+}
+
+.shop-footer {
+  display: flex;
+  height: 5vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .empty-cart {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .flat-btn {
+    width: 100px;
+  }
+}

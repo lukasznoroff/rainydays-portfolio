@@ -1,0 +1,23 @@
+/* ---blind links --- */
+
+.blind-login {
+  background-image: url("/images/login-image-min.jpeg");
+  height: 100%;
+  width: 100%;
+  background-color: rgb(47, 51, 48);
+
+}
+
+.btn-form-wrapper .flat-btn {
+  height: 36vh;
+  align-items: flex-end;
+  background-color: transparent;
+  width: 100%;
+}
+
+.btn-login-form-wrapper .flat-btn {
+  height: 45vh;
+  align-items: flex-end;
+  background-color: transparent;
+  width: 100%;
+}

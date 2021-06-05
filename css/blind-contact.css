@@ -1,0 +1,19 @@
+/* ---blind links --- */
+
+.blind-contact {
+  background-image: url("/images/woman.png");
+  background-image: url("/images/login-image-min.jpeg");
+
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  background-color: rgb(47, 51, 48);
+}
+
+.cards-headers {
+  color: rgb(228, 208, 183);
+}
+
+.flat-btn {
+  margin: 20px;
+}

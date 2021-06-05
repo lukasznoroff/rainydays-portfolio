@@ -1,0 +1,186 @@
+/* --- shopping cart --- */
+
+.cards-wrapper {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  height: 60vh;
+}
+
+.cards {
+  display: flex;
+  margin: auto;
+  height: 60vh;
+  min-width: 60%;
+}
+
+.card-col {
+  width: 400px;
+}
+
+.product-card {
+  min-width: 1100px;
+  min-width: 60%;
+  display: flex;
+  background-color: var(--bgc-shop-col-left);
+}
+
+.cards-headers, .cart-dark{
+  color: #4d4343;
+  padding: 20px;
+}
+
+.product-info {
+  display: inline-block;
+  padding: 11px;
+}
+
+.single-line {
+  padding: 3px;
+  color: #4d4343;
+}
+
+.product-cart-bottom li:first-child {
+  border-bottom: 1px solid  #4d4343;
+  padding: 0;
+  width: 20vw;
+  margin-bottom: 20px;
+}
+
+.cart-jacket {
+  width: 50%;
+  object-fit: contain;
+}
+
+.price-text {
+  margin-top: 0.8vw;
+}
+
+.credit-card {
+  background: var(--bgc-shop-col-right);
+}
+
+.credit-cards {
+  width: 13vw;
+  height: 10vw;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.credit-cards-info {
+  padding: 0;
+}
+
+.cards-info li:first-child {
+  border-bottom: 1px solid #4d4343;;
+  width: 16vw;
+  margin-bottom: 0.5vw;
+  padding: 0;
+}
+
+.credit-card {
+  width: 40%;
+}
+
+.flat-btn {
+  display: inline-flex;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  margin: 10px 0;
+  text-decoration: none;
+  background-color: var(--flat-btn-color);
+  transition: all 0.4s ease-in-out;
+  text-decoration: transparent;
+}
+
+.flat-btn:nth-last-of-type(2) {
+  margin-top: 50px;
+}
+
+.flat-btn:hover {
+  color: var(--white-color);
+  text-decoration: underline;
+  background-color: rgba(65, 126, 133, 0.582);
+}
+
+.button-payment-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .cards {
+    height: auto;
+    min-width: 0;
+    width: 88%;
+    flex-direction: column;
+  }
+
+  .cards-wrapper {
+    width: 90%;
+    height: 65vh;
+    margin-top: 40px;
+  }
+
+  .cart-jacket {
+    width: 50%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  .cards-headers {
+    font-size: 4vw;
+    padding: 20px 0;
+  }
+
+  .cards-text {
+    font-size: 2.2vw;
+  }
+
+  .credit-card {
+    width: 100%;
+  }
+
+  .cards-info li:first-child {
+    display: none;
+  }
+
+  .credit-cards {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .credit-cards .credit-card {
+    width: 70px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .button-payment-box {
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .social-media-box {
+    display: none;
+  }
+
+  .btn {
+    width: max-content;
+  }
+  
+  .credit-cards-info {
+    display: none;
+  }
+
+}

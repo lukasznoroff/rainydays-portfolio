@@ -1,0 +1,19 @@
+/* ---blind links --- */
+
+.blind-register {
+  background-image: url("/images/register-image-min.jpeg");
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  background-color: rgb(47, 51, 48);
+  
+}
+
+.blind-register {
+  padding: 30px;
+}
+
+.rainydays-bgc {
+  color: var(--rainydays-color);
+  background-color: var(--rainydays-bgc-color);
+}

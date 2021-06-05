@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="rainydays login page 
+  you can log in here, or become a customer and create an account ">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>rainydays login page</title>
+  <!-- Hotjar Tracking Code for https://agitated-lamport-4ce111.netlify.app/ -->
+  <!-- <script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2266915,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+</head>
+
+<body>
+  <header>
+    <label class="hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav>
+      <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo for rainydays website"></a>
+      </div>
+      <ul>
+        <li data-page-name="index" class="link"><a href="/index.html">Home</a></li>
+        <li data-page-name="about"  class="link"><a href="/pages/about.html">About</a></li>
+        <li data-page-name="shop" class="link women"><a href="/pages/shop.html?sex=female">Women</a></li>
+        <li data-page-name="shop" class="link men"><a href="/pages/shop.html?sex=male">Men</a></li>
+        <li data-page-name="payment" class="link"><a href="/pages/payment.html">Payment</a></li>
+        <li data-page-name="contact" class="link"><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+      <div class="icon">
+        <a href="../pages/cart.html"><i class="fas fa-shopping-cart top-icon" aria-hidden="true"></i><span
+            class="cart-total-items">0</span></a>
+        <a href="../pages/login.html"><i class="fas fa-user top-icon" aria-hidden="true"></i></i></a>
+      </div>
+    </nav>
+  </header>
+  <div class="section-login">
+    <div class="columns">
+      <div class="col-left-login column-log-reg headers men login-form">
+        <h2>LOGIN</h2>
+        <div class="input-box">
+          <label class="form-text" for="email">Email</label>
+          <input class="input login-email" type="email" name="email" required>
+          <p class="error-login-email error-message-login">Please enter a valid email address</p>
+          <label class="form-text" for="pass">Password</label>
+          <input class="input login-password" type="password" name="password" minlength="8" required>
+          <p class="error-login-password error-message-login">Please enter correct password</p>
+          <div class="btn-login">
+            <!-- <a class="btn" href="/pages/blind-login.html">LOGIN</a> -->
+          </div>
+          <a class="btn login-btn" type="submit">LOGIN</a>
+        </div>
+
+        <div class="blind-login all-blind-links logged">
+          <h1 class="cards-headers">YOUR ARE LOGGED IN</h1>
+          <a class="flat-btn" href="/index.html">BACK TO MAIN PAGE</a>
+        </div>
+      </div>
+      <div class="col-right-register column-log-reg headers register-form">
+        <h2>REGISTER</h2>
+        <div class="input-box ccc">
+          <label class="form-text" for="name">Name (required)</label>
+          <input class="input name" type="text" name="name" required>
+          <p class="error-name error-message">Please enter your name</p>
+
+          <label class="form-text" for="surname">Surame (required)</label>
+          <input class="input surname" type="text" name="surname" required>
+          <p class="error-surname error-message">Please enter your surname</p>
+
+          <label class="form-text" for="email">Your Email (required)</label>
+          <input class="input email" type="email" name="email" required>
+          <p class="error-email error-message">Please enter your email</p>
+
+          <label class="form-text" for="pass">Password (min 8 characters)</label>
+          <input class="input password" type="password" name="password" minlength="8" required>
+          <p class="error-password error-message">Your password must be at least 8 characters</p>
+
+          <div class="btn-login">
+            <!-- <a class="btn register-btn" href="/pages/blind-register.html">CREATE</a> -->
+            <a class="btn register-btn" type="submit">CREATE</a>
+          </div>
+        </div>
+
+        <div class="blind-register all-blind-links accound-created">
+          <h1 class="cards-headers">WELCOME.<span class="header-break">YOU HAVE SUCCESSFULLY CREATED YOUR</span><span class="rainydays-bgc">RAINYDAYS</span> DAYS ACCOUNT.</h1>
+              <a class="flat-btn" href="/index.html">BACK TO MAIN PAGE</a>
+          <div class="btn-form-wrapper">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="social-media-box mobile-index">
+        <a class="social-media-icon" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"
+                aria-hidden="true"></i></a>
+        <a class="social-media-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"
+                aria-hidden="true"></i></i></a>
+        <a class="social-media-icon" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"
+                aria-hidden="true"></i></i></i></a>
+    </div>
+    <p class="footer-text">&copy; all rights reserved</p>
+</footer>>
+  <script src="/js/login-form.js"></script>
+  <script src="/js/helpers.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

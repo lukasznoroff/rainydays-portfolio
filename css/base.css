@@ -1,0 +1,159 @@
+:root {
+  --bg-color: #414134;
+  --white-color: #fff;
+  --headers-color: rgb(235, 227, 227);
+  --text-color: #ddd;
+  --text-color2: #4877a0;
+  --btn-about-color: #2c2a2aad;
+  --bgc-mobile: #333;
+  --hover-color: #fff;
+  --blue-box-color: #043850;
+  --bgc-col-left: #08364bad;
+  --bgc-col-right: #313632;
+  --media-color: #0d638a;
+  --inputs-bgc: #183a4900;
+  --border-bottom-color: #707070;
+  --number-underline-color: rgb(121, 204, 183);
+  --rainydays-color: rgb(93, 231, 185);
+  --rainydays-bgc-color: rgba(81, 99, 133, 0.76);
+  --bgc-shop-col-left: #969471;
+  --bgc-shop-col-right: rgb(161, 153, 153);
+  --flat-btn-color: rgba(206, 168, 168, 0.295);
+ 
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+}
+
+/* --- headers --- */
+h1,
+h2 {
+  color: var(--headers-color);
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headers-color);
+  font-size: 1.3vw;
+}
+
+/* --- paragraphs --- */
+p {
+  color: var(--text-color);
+  font-weight: 100;
+  line-height: 1.7;
+  font-size: 0.74vw;
+}
+
+.blue-box-text {
+  color: var(--text-color);
+  font-weight: 100;
+  line-height: 1.7;
+  font-size: 1vw;
+}
+
+/* --- shopping carts --- */
+
+.cards-headers {
+  font-size: 1vw;
+  padding: 1vw 0;
+  color: var(--text-color);
+}
+
+.cards-headers-right {
+  margin-left: 11px;
+}
+
+.cards-headers-small {
+  font-size: 0.6vw;
+  padding: 0.5vw 0;
+  color: var(--text-color);
+}
+
+/* --- INPUTS --- */
+
+.input {
+  background-color: var(--inputs-bgc);
+  border: none;
+  border-bottom: 2px solid var(--border-bottom-color);
+  outline: none;
+  /* margin-bottom: 3vh; */
+  margin-top: 1vh;
+  padding: 5px;
+  color: var(--white-color);
+  width: 16vw;
+}
+
+/* --- shopping cart --- */
+
+.cards-text {
+  font-size: 0.6vw;
+  color: var(--text-color);
+}
+
+/* --- blind links --- */
+
+.all-blind-links {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+  height: 700px;
+  margin: auto;
+}
+
+.blind-login {
+  padding: 20px;
+}
+
+.shop-footer {
+  display: flex;
+  height: 15vh;
+  align-items: flex-end;
+}
+
+
+/*--- current links ---*/
+
+
+
+.current-site {
+  border-bottom: 2px solid var(--white-color);
+}
+.current-site-women {
+  border-bottom: 2px solid var(--white-color);
+}
+.current-site-men {
+  border-bottom: 2px solid var(--white-color);
+}
+
+
+@media only screen and (max-width: 800px) {
+  .all-blind-links {
+    width: 80vw;
+    margin-top: 40px;
+  }
+  .blue-box-text {
+    font-size: 16px;
+  }
+
+}
+
+.page-footer {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+}
+

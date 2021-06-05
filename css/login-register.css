@@ -1,0 +1,143 @@
+/* login-register */
+
+.section-login {
+  width: 80%;
+  margin: auto;
+}
+
+.columns {
+  display: flex;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.column-log-reg {
+  background-color: var(--bgc-col-left);
+  width: max(35%, 220px);
+  height: 70vh;
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.253);
+}
+
+.form-text {
+  font-size: 0.7vw;
+  max-height: 5%;
+}
+
+.col-left-login .input-box {
+  height: max(63%, 300px);
+}
+
+.btn-login {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-start: auto;
+  /* height: 4vh; */
+}
+
+.error-message {
+  margin-bottom: 1vh;
+  opacity: 0;
+}
+
+.error-message.show-error {
+  opacity: 1;
+  color: rgb(202, 49, 49);
+
+}
+
+.register-form {
+  position: relative;
+}
+
+.accound-created {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -99;
+}
+
+.accound-created.visible{
+  opacity: 1;
+  z-index: 99;
+  animation: blur2 .8s forwards;
+  filter: drop-shadow( 0px 0px 10px #333);
+
+}
+
+
+@keyframes blur2 {
+  from{
+    transform: scaleX(.2);
+    filter: blur(24px);
+    /* opacity: 0.3; */
+  }
+ 
+  to {
+    /* transform: scale(1); */
+
+    opacity: 1;
+  }
+}
+
+
+.login-form {
+  position: relative;
+}
+
+.logged {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -99;
+}
+
+.logged.visible{
+  opacity: 1;
+  z-index: 99;
+  animation: blur2 .8s forwards;
+  filter: drop-shadow( 0px 0px 10px #333);
+
+}
+
+
+.error-message-login {
+  margin-bottom: 2vh;
+  opacity: 0;
+}
+
+.error-message-login.show-error {
+  opacity: 1;
+  color: rgb(202, 49, 49);
+
+}
+
+@media only screen and (max-width: 800px) {
+  .columns {
+    display: block;
+    width: 80vw;
+  }
+
+  .input {
+    width: 40vw;
+  }
+
+  .col-left-login.headers {
+    width: 80vw;
+    margin-bottom: 40px;
+  }
+
+  .col-right-register {
+    width: 80vw;
+  }
+
+  .column-log-reg {
+    height: 70vh;
+  }
+
+  .logged, .accound-created{
+  top: -9%;
+  }
+
+}

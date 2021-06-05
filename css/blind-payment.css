@@ -1,0 +1,17 @@
+/* ---blind links --- */
+
+.blind-payment {
+  background-image: url("/images/woman.png");
+  background-image: url("/images/register-image-min.jpeg");
+
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  background-color: var(--bg-color);
+}
+
+.number-underline {
+  color: var(--number-underline-color);
+  text-decoration: underline;
+}
+

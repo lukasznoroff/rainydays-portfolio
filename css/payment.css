@@ -1,0 +1,141 @@
+/*--- payment ---*/
+
+.payment-section-wrapper {
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+}
+
+.payment-section {
+  display: flex;
+  width: 80%;
+  margin: 40px auto;
+  height: 70vh;
+}
+
+.form-text {
+  font-size: 0.7vw;
+  max-height: 5%;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.col-left-payment {
+  height: 70vh;
+  background-color: var(--bgc-col-left);
+  flex-basis: 35%;
+  justify-content: space-between;
+  padding: 40px;
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.253);
+}
+
+.textarea {
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  background-color: transparent;
+  width: 9vw;
+  height: 4vw;
+  color: var(-white-color);
+}
+
+.submit-btn {
+  outline: none;
+  border: none;
+  appearance: none;
+}
+
+.col-right-payment {
+  background-color: var(--bgc-col-right);
+  flex-basis: 35%;
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.253);
+  height: 70vh;
+}
+
+
+.payment-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.error-message-shipping {
+  opacity: 0;
+}
+
+.error-message-shipping.show-error {
+  opacity: 1;
+  color: rgb(202, 49, 49);
+}
+
+.payment-wrapper {
+  position: relative;
+}
+
+.payment-slide {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -99;
+}
+
+.payment-slide.visible{
+  opacity: 1;
+  z-index: 99;
+  animation: blur2 .8s forwards;
+  filter: drop-shadow( 0px 0px 10px #333);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .payment-section-wrapper {
+    height: auto;
+  }
+
+  .col-left-payment {
+    margin-bottom: 40px;
+    height: auto;
+    width: 100%;
+    flex-basis: auto;
+    box-shadow: 0 0;
+  }
+
+  .col-right-payment {
+    height: auto;
+    width: 100%;
+    flex-basis: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 0;
+  }
+
+  .submit-btn {
+    margin-top: 5px;
+    padding: 1vh 5vw;
+    font-size: 3vw;
+  }
+
+  .payment-section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .headers h1 {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .form-text {
+    font-size: 2vw;
+  }
+
+  .payment-slide {
+    top: -9%;
+    left: 0%;
+  }
+}

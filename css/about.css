@@ -1,0 +1,120 @@
+/*--- about ---*/
+
+.about-section {
+  display: flex;
+  height: 70vh;
+  margin: auto;
+  width: 80vw;
+}
+
+.about-col-left {
+  max-width: 30vw;
+  margin: auto 0;
+}
+
+.about-col-left h1,
+h2,
+h3 {
+  color: var(--headers-color);
+  margin-bottom: 0.6vw;
+}
+
+.about-col-left p {
+  color: var(--text-color);
+  margin-bottom: 2vw;
+}
+
+.about-col-right {
+  display: flex;
+  width: 15%;
+  margin: auto;
+}
+
+.about-image {
+  position: sticky;
+  width: 15vw;
+}
+
+.btn-about {
+  display: flex;
+  background-color: var(--btn-about-color);
+  font-size: 1vw;
+  text-decoration-line: none;
+  color: var(--text-color);
+  transition: all 0.9s ease;
+  width: 15vw;
+}
+
+.btn-men-about {
+  justify-content: flex-end;
+  padding: 62px;
+  margin-bottom: -5px;
+}
+
+.btn-women-about {
+  padding: 61px;
+  margin-top: -7px;
+}
+
+.btn-women-about:hover,
+.btn-men-about:hover {
+  transform: translateY(-5px);
+  color: var(--hover-color);
+  transition-duration: 1s;
+  background-color: transparent;
+}
+
+.btn-men-about:hover {
+  transform: translateY(5px);
+}
+
+@media only screen and (max-width: 800px) {
+  .about-section {
+    flex-direction: column-reverse;
+    width: 80%;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .about-col-right {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .about-image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .btn-about {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .about-col-left {
+    height: auto;
+  }
+
+  .about-col-left h2 {
+    font-size: 20px;
+  }
+  .about-col-left p {
+    font-size: 15px;
+    width: 80vw;
+  }
+
+  .btn-women-about {
+    margin-top: -12px;
+  }
+
+  .btn-about {
+    font-size: 15px;
+  }
+
+  .about-col-left h1,
+  h2 {
+    font-size: 20px;
+  }
+}
